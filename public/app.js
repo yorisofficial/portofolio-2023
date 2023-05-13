@@ -1,23 +1,13 @@
-window.onload = function() {
-    scrollToTop();
-  };
-  
-  function scrollToTop() {
-    window.scrollTo(0, 0);
-  }
-  
+const iconNav = document.querySelectorAll('#icon-nav ion-icon');
 
-window.addEventListener('scroll', function() {
-    let navBar = document.getElementById('nav-me');
-    let btnGrup1 = document.getElementById('btn-grup1');
-    let btnGrup2 = document.getElementById('btn-grup2');
-    let isScrolled = window.scrollY > 5;
+iconNav.forEach((icon) => {
+  const parent = icon.closest('a');
 
-    navBar.classList.toggle('bg-white', isScrolled);
-    navBar.classList.toggle('drop-shadow-xl', isScrolled);
-    btnGrup1.classList.toggle('text-gray-50', !isScrolled);
-    btnGrup1.classList.toggle('text-gray-800', isScrolled);
-    btnGrup2.classList.toggle('text-gray-50', !isScrolled);
-    btnGrup2.classList.toggle('text-gray-800', isScrolled);
+  parent.addEventListener('mouseenter', () => {
+    icon.setAttribute('name', icon.getAttribute('name').replace('-outline', ''));
+  });
+
+  parent.addEventListener('mouseleave', () => {
+    icon.setAttribute('name', icon.getAttribute('name') + '-outline');
+  });
 });
-

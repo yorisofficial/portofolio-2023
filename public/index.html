@@ -5,99 +5,112 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- fontawesome 5 icon -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
         <!-- tailwind css -->
         <link rel="stylesheet" href="/dist/output.css">
         <title>Portofolio - Ade</title>
     </head>
     <body class="font-mono text-gray-800 scroll-smooth text-sm">
         <header class="w-screen">
-            <nav class="fixed bottom-0 py-3 navbar w-full z-10 bg-white text-gray-800 border-t-2 border-gray-300 drop-shadow-xl">
-                <div class="w-full flex justify-center items-center">
-                    <a href="" class="capitalize w-full border-2 border-red-500">
-                        <div class=" flex flex-col justify-center items-center p-2 border-2 border-red-500">
-                            <i class="fab fa-linkedin-in mb-2 text-xl"></i> home
+            <nav class="navbar fixed bottom-0 lg:top-0 lg:sticky z-10 w-full border-t-2 border-gray-300 bg-white py-3 text-gray-800 drop-shadow-xl">
+                <div class="flex w-full items-center justify-center">
+                    <a id="icon-nav" href="" class="w-full border-2 border-red-500 capitalize hover:text-yellow-400 transform duration-500 ease-in-out">
+                        <div class="flex flex-col items-center justify-center border-2 border-red-500 p-2">
+                            <ion-icon name="home-outline" class="text-2xl"></ion-icon>home
                         </div>
                     </a>
-                    <a href="" class="capitalize w-full border-2 border-red-500">
-                        <div class=" flex flex-col justify-center items-center p-2 border-2 border-red-500">
-                            <i class="fab fa-linkedin-in mb-2 text-xl"></i> about me
+                    <a id="icon-nav" href="" class="w-full border-2 border-red-500 capitalize hover:text-yellow-400 transform duration-500 ease-in-out">
+                        <div class="flex flex-col items-center justify-center border-2 border-red-500 p-2">
+                            <ion-icon name="person-circle-outline" class="text-2xl"></ion-icon>about me
                         </div>
                     </a>
-                    <a href="" class="capitalize w-full border-2 border-red-500">
-                        <div class=" flex flex-col justify-center items-center p-2 border-2 border-red-500">
-                            <i class="fab fa-linkedin-in mb-2 text-xl"></i> skill
+                    <a id="icon-nav" href="" class="w-full border-2 border-red-500 capitalize hover:text-yellow-400 transform duration-500 ease-in-out">
+                        <div class="flex flex-col items-center justify-center border-2 border-red-500 p-2">
+                            <ion-icon name="document-text-outline" class="text-2xl"></ion-icon>skill
                         </div>
                     </a>
-                    <a href="" class="capitalize w-full border-2 border-red-500">
-                        <div class=" flex flex-col justify-center items-center p-2 border-2 border-red-500">
-                            <i class="fab fa-linkedin-in mb-2 text-xl"></i> project
+                    <a id="icon-nav" href="" class="w-full border-2 border-red-500 capitalize hover:text-yellow-400 transform duration-500 ease-in-out">
+                        <div class="flex flex-col items-center justify-center border-2 border-red-500 p-2">
+                            <ion-icon name="code-slash-outline" class="text-2xl"></ion-icon>project
                         </div>
                     </a>
-                    <a href="" class="capitalize w-full border-2 border-red-500">
-                        <div class=" flex flex-col justify-center items-center p-2 border-2 border-red-500">
-                            <i class="fab fa-linkedin-in mb-2 text-xl"></i> contact
+                    <a id="icon-nav" href="" class="w-full border-2 border-red-500 capitalize hover:text-yellow-400 transform duration-500 ease-in-out">
+                        <div class="flex flex-col items-center justify-center border-2 border-red-500 p-2">
+                            <ion-icon name="extension-puzzle-outline" class="text-2xl"></ion-icon>contact
                         </div>
                     </a>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-screen h-screen border-2 border-red-500">
-                <div class="kanan w-full bg-black flex justify-center items-center lg:order-2 border-2 border-red-500">
-                    <img src="/public/img/hero-img.png" alt="hero-brand" loading="lazy" class="w-3/4">
-                </div>
-                <div class="kiri flex w-full flex-col items-start justify-start border-2 border-red-500 p-5 lg:px-20">
-                    <div class="w-full border-2 border-red-500 text-center lg:text-start">
-                        <h3 class="mb-5 border-2 border-red-500 font-semibold uppercase">Wellcome in my portofolio</h3>
-                        <h1 class="mb-5 border-2 border-red-500 text-2xl font-bold capitalize">Sebuah petualan yang tak terbatas dan melampauian</h1>
-                        <p class="mb-5 border-2 border-red-500">Saya Ade saya website desainer, saya menekuni bidang ini lebih dari 2 tahun, saya harap anda tertarik dengan karya saya dan menjadikan saya bagian dari projek besar.</p>
-                        <div class="btn-grup mt-10 w-full border-2 border-red-500 text-center lg:text-start">
-                            <a href="" class="btn-solid inline-block transform rounded-md bg-gray-800 px-4 py-2 capitalize text-gray-50 ring-gray-800 duration-700 ease-in-out hover:bg-yellow-300 hover:text-gray-800 hover:ring-2 lg:px-6 lg:py-3">Hubungi Saya</a>
-                            <a href="" class="btn-none inline-block transform px-4 py-2 capitalize duration-700 ease-in-out hover:text-yellow-500 lg:px-6 lg:py-3">tentang saya</a>
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-screen h-screen border-2 border-red-500">
+                    <div class="kanan w-full bg-black flex justify-center items-center lg:order-2 border-2 border-red-500">
+                        <img src="/public/img/hero-img.png" alt="hero-brand" loading="lazy" class="w-3/4">
+                    </div>
+                    <div class="kiri flex w-full flex-col items-start justify-start border-2 border-red-500 p-5 lg:px-20">
+                        <div class="w-full border-2 border-red-500 text-center lg:text-start">
+                            <h3 class="mb-5 border-2 border-red-500 font-semibold uppercase">Wellcome in my portofolio</h3>
+                            <h1 class="mb-5 border-2 border-red-500 text-2xl font-bold capitalize">Sebuah petualan yang tak terbatas dan melampauian</h1>
+                            <p class="mb-5 border-2 border-red-500">Saya Ade saya website desainer, saya menekuni bidang ini lebih dari 2 tahun, saya harap anda tertarik dengan karya saya dan menjadikan saya bagian dari projek besar.</p>
+                            <div class="btn-grup mt-10 w-full border-2 border-red-500 text-center lg:text-start">
+                                <a href="" class="btn-solid inline-block transform rounded-md bg-gray-800 px-4 py-2 capitalize text-gray-50 ring-gray-800 duration-700 ease-in-out hover:bg-yellow-300 hover:text-gray-800 hover:ring-2 lg:px-6 lg:py-3">Hubungi Saya</a>
+                                <a href="" class="btn-none inline-block transform px-4 py-2 capitalize duration-700 ease-in-out hover:text-yellow-500 lg:px-6 lg:py-3">tentang saya</a>
+                            </div>
+                        </div>
+                        <div class="footer-content lg:justify-sitems-start mt-10 flex w-full flex-col items-center justify-center border-2 border-red-500 lg:flex-col lg:items-start">
+                            <div class="header-content w-full border-2 border-red-500">
+                                <h3 class="font-semibold text-center">Get's it touch</h3>
+                            </div>
+                            <div class="icon-grup flex">
+                                <a href="" class="instagram-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
+                                    <i class="fab fa-linkedin-in p-2 lg:p-5"></i>
+                                </a>
+                                <a href="" class="dribble-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
+                                    <i class="fab fa-dribbble p-2 lg:p-5"></i>
+                                </a>
+                                <a href="" class="github-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
+                                    <i class="fab fa-github p-2 lg:p-5"></i>
+                                </a>
+                                <a href="" class="whatsapp-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
+                                    <i class="fab fa-instagram p-2 lg:p-5"></i>
+                                </a>
+                                <a href="" class="email-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
+                                    <i class="fab fa-whatsapp p-2 lg:p-5"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-content lg:justify-sitems-start mt-10 flex w-full flex-col items-center justify-center border-2 border-red-500 lg:flex-col lg:items-start">
-                        <div class="header-content w-full border-2 border-red-500">
-                            <h3 class="font-semibold text-center">Get's it touch</h3>
-                        </div>
-                        <div class="icon-grup flex">
-                            <a href="" class="instagram-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
-                                <i class="fab fa-linkedin-in p-2 lg:p-5"></i>
-                            </a>
-                            <a href="" class="dribble-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
-                                <i class="fab fa-dribbble p-2 lg:p-5"></i>
-                            </a>
-                            <a href="" class="github-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
-                                <i class="fab fa-github p-2 lg:p-5"></i>
-                            </a>
-                            <a href="" class="whatsapp-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
-                                <i class="fab fa-instagram p-2 lg:p-5"></i>
-                            </a>
-                            <a href="" class="email-icon transform border-2 border-red-500 text-xl text-black text-opacity-40 duration-700 ease-in-out hover:rounded-full hover:bg-yellow-500 hover:text-gray-50 hover:opacity-100">
-                                <i class="fab fa-whatsapp p-2 lg:p-5"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <!-- <div id="aboutme" class="container grid grid-cols-1 lg:grid-cols-2 w-screen h-screen lg:px-20">
-                <div class="></div>
-                <div class="></div>
+            <div class="container h-screen w-screen border-2 border-red-500">
+                <div id="aboutme" class="grid h-full w-full grid-cols-1 px-10 lg:grid-cols-2 lg:px-20">
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                </div>
             </div>
-            <div id="skill" class="container grid grid-cols-1 lg:grid-cols-2 w-screen h-screen lg:px-20">
-                <div class="></div>
-                <div class="></div>
+            <div class="container h-screen w-screen border-2 border-red-500">
+                <div id="skill" class="grid h-full w-full grid-cols-1 px-10 lg:grid-cols-2 lg:px-20">
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                </div>
             </div>
-            <div id="portofolio" class="container grid grid-cols-1 lg:grid-cols-2 w-screen h-screen lg:px-20">
-                <div class="></div>
-                <div class="></div>
+            <div class="container h-screen w-screen border-2 border-red-500">
+                <div id="portofolio" class="grid h-full w-full grid-cols-1 px-10 lg:grid-cols-2 lg:px-20">
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                </div>
             </div>
-            <div id="service" class="container grid grid-cols-1 lg:grid-cols-2 w-screen h-screen lg:px-20">
-                <div class="></div>
-                <div class="></div>
-            </div> -->
+            <div class="container h-screen w-screen border-2 border-red-500">
+                <div id=" service" class="grid h-full w-full grid-cols-1 px-10 lg:grid-cols-2 lg:px-20">
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                    <div class="flex items-center justify-center border-2 border-red-500">Hey content</div>
+                </div>
+            </div>
         </main>
-        <script src="/public/app.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src=" /public/app.js">
+        </script>
     </body>
 </html>
